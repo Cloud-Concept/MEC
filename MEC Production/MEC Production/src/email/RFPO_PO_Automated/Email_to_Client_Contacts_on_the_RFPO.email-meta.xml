@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>HTML Email to Client Contacts on the RFPO</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BirthdayEmailerLetterhead</letterhead>
+    <name>Email to Client Contacts on the RFPO!</name>
+    <style>freeForm</style>
+    <subject>MEC RFPO (Request for Purchase order) for Month {!MONTH(TODAY())} - Week {!Opportunity.Week_Number__c}</subject>
+    <textOnly>Dear {!Opportunity.Salutation__c} {!Opportunity.Contact__c},
+
+Please find MEC RFPO (Request for Purchase Order) details as attached.
+
+Note:
+- The RFPO Calculation is based on your account SOH (Stock on hand) and Sell-out run rate.
+- Please send your PO immediately to secure the quantities, any delay in PO might result in quantities change, based on availability.
+- Please ensure there is no outstanding payment to avoid blocking your orders.
+
+
+Best regards.
+{!Opportunity.OwnerFullName}</textOnly>
+    <type>html</type>
+</EmailTemplate>

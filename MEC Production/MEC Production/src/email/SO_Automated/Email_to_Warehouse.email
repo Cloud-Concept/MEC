@@ -1,0 +1,6 @@
+Dear WH Team,
+
+Please arrange the delivery for the attached Sales Order {!Order.OrderNumber}.
+
+Best regards
+{!Order.OwnerFullName}

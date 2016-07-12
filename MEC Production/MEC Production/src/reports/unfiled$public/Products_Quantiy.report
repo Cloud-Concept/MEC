@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Stock__c$Unrestricted__c</field>
+    </columns>
+    <columns>
+        <field>Stock__c$Name</field>
+    </columns>
+    <currency>SAR</currency>
+    <description>Products Unrestricted Quantity per Warehouse</description>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Stock__c$Site__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Stock__c$Article__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Products Unrestricted Warehouse Quantity</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Stocks__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Stock__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

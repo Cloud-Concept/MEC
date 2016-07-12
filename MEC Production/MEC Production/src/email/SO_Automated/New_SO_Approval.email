@@ -1,0 +1,14 @@
+Dear {!User.FirstName}
+
+(This is an automated message. Reply 'Yes' to approve or 'No' to reject.)
+
+The following Sales Order is submitted for your approval:
+Account Name: {!Account.Name}
+Opportunity Name: {!Order.OrderNumber}
+Order Start Date: {!Order.EffectiveDate}
+Order Type: {!Order.Type}
+Amount: {!Order.TotalAmount}
+Status: {!Order.Status}
+Details: {!Order.Link}
+
+Thank you

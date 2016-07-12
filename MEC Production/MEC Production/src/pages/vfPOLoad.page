@@ -1,0 +1,78 @@
+<apex:page controller="POLoadController" >
+    
+    <apex:form >
+        <apex:pagemessages />
+        <apex:pageBlock >
+            <apex:pageBlockSection collapsible="false" title="Instuctions">
+                <p> * File format should be in <B>.CSV Comma Separated</B>.</p>
+                <p> * Product name in the file shouldn't contain any <B> COMMA </B> character.</p>
+                <p> *
+                <a href="/servlet/servlet.FileDownload?file={!extraFile.Id}"  target="_blank" styleClass="btn">Extra Sample File</a>
+                <a href="/servlet/servlet.FileDownload?file={!VirginFile.Id}"  target="_blank" styleClass="btn">Virgin Sample File</a>
+                </p>
+            </apex:pageBlockSection>
+            <hr></hr>
+            <table width="200">
+            <tr>
+            <td>
+                <apex:outputLabel value="Customer: " />   
+                <apex:inputField id="Account" value="{!tmpContact.AccountId}"/>
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <apex:outputLabel value="RFPO Reference: " /> 
+                <apex:inputField id="Opportunity" value="{!tmpObject.Opportunity__c}"/>   
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <!-- <apex:pageBlockSection columns="3"> -->
+                <apex:outputLabel value="PO Template" /> 
+                <apex:inputFile title="PO Template" value="{!csvFileBody}" filename="{!csvAsString}"/>
+                <apex:commandButton value="Load File" action="{!importCSVFile}" />
+            <!-- </apex:pageBlockSection> -->
+            </td>
+            </tr>
+            </table>
+        </apex:pageBlock>
+
+        <apex:pageBlock rendered="{!NOT(ISNULL(poMappingList))}">
+            <apex:pageblocktable id="table" value="{!poMappingList}" var="po">
+                <apex:column value="{!po.acct.name}">                    
+                    <apex:facet name="header">Account Name</apex:facet>
+                </apex:column>
+                <apex:column title="MEC Product Code" rendered="{!NOT(ISNULL(po.prod.id))}" value="{!po.prod.productCode}" >
+                    <apex:facet name="header">MEC Product Code</apex:facet>
+                </apex:column>
+                <apex:column title="MEC Product Code" rendered="{!ISNULL(po.prod)}" >
+                    <apex:inputField value="{!po.tmpObj.Product__c}"/>
+                    <!--
+                    <apex:selectList value="{!po.prodId}"  size="1">
+                        <apex:selectOptions value="{!prodList}"/>
+                    </apex:selectList>
+                    -->
+                    <apex:facet name="header">MEC Product Code</apex:facet>
+                </apex:column>
+                <apex:column title="Client Product Code" value="{!po.clientCode}" >
+                    <apex:facet name="header">Client Product Code</apex:facet>
+                </apex:column>
+                <apex:column title="Number of Items" value="{!po.numberOfItems}" >
+                    <apex:facet name="header">Number of Items</apex:facet>
+                </apex:column>
+                <apex:column title="Match" >
+                    <apex:inputCheckbox onclick="return false;" onkeydown="return false;" value="{!po.match }"/>
+                    <apex:facet name="header">Match</apex:facet>
+                </apex:column>
+                <apex:column title="Notes"  value="{!po.notes }" >
+                    <apex:facet name="header">Notes</apex:facet>
+                </apex:column>
+            </apex:pageblocktable>
+            <apex:PAGEBlockButtons >                 
+                <apex:commandButton rendered="{!success}" value="Proceed PO" action="{!upload}" />
+            </apex:PAGEBlockButtons>
+        </apex:pageBlock>
+        
+    </apex:form>
+    
+</apex:page>

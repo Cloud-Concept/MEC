@@ -1,0 +1,13 @@
+Dear {!User.FirstName}
+
+(This is an automated message. Do not reply.)
+
+The following Sales Order is now created:
+Account Name: {!Account.Name}
+Opportunity Name: {!Order.OrderNumber}
+Order Start Date:{!Order.EffectiveDate}
+Order Type: {!Order.Type}
+Amount:{!Order.Total_Price__c}
+Status: {!Order.Status}
+Details: {!Order.Link}
+Thank you

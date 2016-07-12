@@ -1,0 +1,62 @@
+<apex:page standardController="Opportunity" extensions="DetailsPage" sidebar="false" showHeader="false">
+    <style>
+        td {
+        text-align:center;
+        width: 11.11%;
+        }
+        
+        table, th, td {
+        border: 1px solid black;
+        }        
+        tr:nth-child(even) {background-color: #f2f2f2}
+        tr:hover {background-color: #f5f5f5}
+        th, td {
+        border-bottom: 1px solid #ddd;
+        }
+        .aligned-right{
+        text-align:right;
+        }
+    </style>
+    <apex:pageBlock >
+        <table>
+            <tr>
+                <th style="text-align:center">Product</th>
+                <th style="text-align:center">RFP Qty</th>
+                <th style="text-align:center">PO Qty</th>
+                <th style="text-align:center">Stock in Channel</th>
+                <th style="text-align:center">Available On Hand Stock Qty in MEC</th>
+                <th style="text-align:center">Sell OUT Qty</th>
+                <th style="text-align:center">Sell IN Qty</th>
+                <th style="text-align:center">Price</th>
+                <th style="text-align:center">Remaining Unbooked Qty</th>
+            </tr>
+            <apex:repeat value="{!TableData}" var="row">
+                <tr>
+                    <td>{!row.ProductName}</td>
+                    <td>{!row.RFP_Qty}</td>
+                    <td>{!row.PO_Qty}</td>
+                    <td>{!row.Stock_Qt}</td>
+                    <td>{!row.AvailableStock}</td>
+                    <td>{!row.SellOUTQty}</td>
+                    <td>{!row.SellINQty}</td>
+                    <td>{!row.Price}</td>
+                    <td>{!row.RemainingUnbookedQty}</td>
+                </tr>
+            </apex:repeat>
+            <tr>
+                <apex:repeat value="{!TotalVal}" var="row">
+                    <td colspan="7" class="aligned-right">Total Value of PO</td>
+                    <td>{!row.TotalPrice}</td>
+                    <td>{!row.TotalUnbooked}</td>
+                </apex:repeat>
+            </tr>
+            <!--
+            <tr>
+                <td colspan="7" class="aligned-right">Within credit limit?</td>
+                <td>00001</td>
+                <td>00002</td>
+            </tr>
+            -->
+        </table>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Approval_Rejection_Confirmation</fullName>
+        <ccEmails>mec@cloudconceptgroup.com</ccEmails>
+        <description>Approval/Rejection Confirmation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales_Director_and_Support</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SO_Automated/SO_Approval_Rejection_Confirmation</template>
+    </alerts>
+    <alerts>
+        <fullName>Approval_Rejection_Confirmation2</fullName>
+        <ccEmails>mec@cloudconceptgroup.com</ccEmails>
+        <description>Approval/Rejection Confirmation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales_Director_and_Support</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SO_Automated/SO_Approval_Rejection_Confirmation</template>
+    </alerts>
+    <alerts>
+        <fullName>SO_Approval_Alert</fullName>
+        <ccEmails>mec@cloudconceptgroup.com</ccEmails>
+        <description>SO Approval Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales_Director_and_Support</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SO_Automated/New_SO_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Confirmation_Email</fullName>
+        <ccEmails>mec@cloudconceptgroup.com</ccEmails>
+        <description>Send Confirmation Email</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SO_Automated/New_Sales_Order_Created</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approval_Status_to_Approved</fullName>
+        <description>- Set Approval Status = &apos;Approved&apos;</description>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approval Status to Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_Approval_status</fullName>
+        <description>- Set Approval Status = &apos;Rejected&apos;</description>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Change Approval status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SO_Over_Limit_Approval_Status</fullName>
+        <field>Over_Credit_Limit_Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Over Limit Approval Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SO_Over_Limit_Approval_Status2</fullName>
+        <field>Over_Credit_Limit_Approval_Status__c</field>
+        <name>Over Limit Approval Status2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>01SO_Over_Limit_Approval</fullName>
+        <actions>
+            <name>SO_Over_Limit_Approval_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Order.Temporary_Approval_For_OverCredit_Limit__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>If &quot;Temporary Approval For Credit Limit&quot; is checked update status to Pending</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>S01O_Over_Limit_Approval_Unchecked</fullName>
+        <actions>
+            <name>SO_Over_Limit_Approval_Status2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Order.Temporary_Approval_For_OverCredit_Limit__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>If unchecked update &quot;Over Limit Approval Status&quot; to none</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send email</fullName>
+        <actions>
+            <name>Send_Confirmation_Email</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Order.Status</field>
+            <operation>equals</operation>
+            <value>Draft</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

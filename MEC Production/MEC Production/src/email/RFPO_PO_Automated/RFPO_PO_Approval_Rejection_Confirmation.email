@@ -1,0 +1,14 @@
+Dear {!User.FirstName}
+
+(This is an automated message. Do not reply.)
+
+The following RFPO/PO is now on Stage {!Opportunity.StageName}:
+
+Account Name: {!Opportunity.Account}
+Opportunity Name: {!Opportunity.Name} 
+Close Date: {!Opportunity.CloseDate}
+Stage:  {!Opportunity.StageName}
+Details: {!Opportunity.Link}
+
+
+Thank you

@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div><font face="arial">Dear {!Contact.Salutation} {!Contact.Name},</font></div><div><font face="arial"><br></font></div><div><font face="arial">We just wanted to send you a Happy Birthday wish, from all of us at MEC.</font></div><div><font face="arial">May you celebrate it with those most meaningful to you.</font></div><div><font face="arial"><br></font></div><div><font face="arial">Sincerely,</font></div><div><font face="arial">{!Organization.Name}</font></div>]]></td>
+</tr>
+</table>
