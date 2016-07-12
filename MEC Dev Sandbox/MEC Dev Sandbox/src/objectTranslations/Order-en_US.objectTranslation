@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Orders</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Credit Limit --></label>
+        <name>Account_Credit_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account Credit Note --></help>
+        <label><!-- Account Credit Note --></label>
+        <name>Account_Credit_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Over Due --></label>
+        <name>Account_Over_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Approved</masterLabel>
+            <translation><!-- Not Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Available Stock --></label>
+        <name>Available_Stock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking No --></label>
+        <name>Booking_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- Credit Limit Status Text - to be hidden - This will populate the visual indicator --></help>
+        <label><!-- Credit Limit Status Text --></label>
+        <name>Credit_Limit_Status_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit Status --></label>
+        <name>Credit_Limit_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Front Margin % --></label>
+        <name>Front_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Delivery Date --></label>
+        <name>Order_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- If negative, shows (Over Due + SO Amount) - (Account Credit Limit + Account Credit Note), Otherwise shows 0 --></help>
+        <label><!-- Over Credit Limit Amount --></label>
+        <name>Over_Credit_Limit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Over Credit Limit Approval Status --></label>
+        <name>Over_Credit_Limit_Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Over Credit Limit Percentage --></label>
+        <name>Over_Credit_Limit_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Qty --></label>
+        <name>PO_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Validity --></label>
+        <name>PO_Validity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qty fulfilled --></label>
+        <name>Qty_fulfilled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote --></label>
+        <name>Quote__c</name>
+        <relationshipLabel><!-- Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RFP Qty --></label>
+        <name>RFP_Qty__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Reason for over credit Limit request if needed --></help>
+        <label><!-- Reason for OverCredit Limit / Remarks --></label>
+        <name>Reason_for_OverCredit_Limit_Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejection Reason --></label>
+        <name>Rejection_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Credit limit Exceeded</masterLabel>
+            <translation><!-- Credit limit Exceeded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit status is blocked</masterLabel>
+            <translation><!-- Credit status is blocked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overdue Payments</masterLabel>
+            <translation><!-- Overdue Payments --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SAP Order Number --></label>
+        <name>SAP_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sell In Qty --></label>
+        <name>Sell_In_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sell Out Qty --></label>
+        <name>Sell_Out_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stock in Channel --></label>
+        <name>Stock_in_Channel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box if you with you request for a Temporary Approval For Credit Limit? --></help>
+        <label><!-- Temporary Approval For OverCredit Limit? --></label>
+        <name>Temporary_Approval_For_OverCredit_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Price --></label>
+        <name>Total_Price__c</name>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Order</masterLabel>
+            <translation><!-- Order --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unbooked Qty --></label>
+        <name>Unbooked_Qty__c</name>
+    </fields>
+    <layouts>
+        <layout>Order Layout</layout>
+        <sections>
+            <label><!-- Financial Detail --></label>
+            <section>Financial Detail</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter a reason or the Over Limit request then submit for approval. 
+Error: SO01 --></errorMessage>
+        <name>SO01_Over_Credit_Limit_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to unchecked the &quot;Temporary Approval For Credit Limit &quot; field once Approval or Rejection is provided 
+Error: SO02 --></errorMessage>
+        <name>SO02_Temporary_Approval_For_Credit_Limit</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Send_an_Email --></label>
+        <name>Send_an_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BirthdayEmailerLetterhead</letterhead>
+    <name>Celebrating your Wedding Anniversary</name>
+    <style>freeForm</style>
+    <subject>Happy Wedding Anniversary from {!Organization.Name}</subject>
+    <textOnly>Dear {!Contact.Salutation} {!Contact.Name},
+
+MEC team would like to wish you a happy wedding anniversary!
+May your life be full of Love, Health, and Happiness.
+
+Sincerely,
+{!Organization.Name}</textOnly>
+    <type>html</type>
+</EmailTemplate>

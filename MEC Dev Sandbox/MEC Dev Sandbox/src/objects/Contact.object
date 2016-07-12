@@ -1,0 +1,3063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Anniversary_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This can be used to store wedding anniversary, an anniversary of doing business together, or any other annually noteworthy date.</inlineHelpText>
+        <label>Anniversary Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Area_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Area 1</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Province</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>City</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Area_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Area 2</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Uptown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Downtown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Area_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Area 3</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Jed 01 : (All areas after Royal Terminal).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 02 : (Al Mohamadiah, Al Nayem &amp; Al Nahda).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 03 : (Al Nozha).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 04 : (Al Salama ,Al Zahra , Al Shatie,Al Rawda &amp; Al Khaledia).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 05 : (Al Safa , Al Marwa, Al Bawadi &amp; Al Faisaliah).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 06 : (Al Rehab , Al Azizia &amp; Mushrefa).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 07 : (Al Hamra , Al Andalus &amp; Al Rowais).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 08 : (Al Naseem , Bani Malik, Al Wrood &amp; Al Sharafia).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 09 : (Eastern Bogdadiah, Al Kandara, Al Suhaifa &amp; Al Amariah).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 10 : (Al Balad &amp; Western Bogdadia).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 11 : (Al Sabeel &amp; Al Hendawiah).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 12 : (Al Sulimaniah &amp; Al Fayha).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 13 : (Al Jamea, Al Thagher, Bin Ladin &amp; Al Wazeeria).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 14 : (Al Nuzlah, Madaen Al Fahad).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jed 15 : (Al Mahgar, Haraj , Al Senaya &amp; Al Khomra).</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kbr 01 : Khobar Downtown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kbr 02 : Khobar Uptown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kbr 03 : Dammam Downtown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kbr 04 : Dammam Khazan St.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kbr 05 : Dammam Uptown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kbr 06 : Jubail Downtown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kbr 07 : Jubail Uptown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kbr 08 : Hassa Downtown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kbr 09 : Hassa Uptown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kbr 10 : Hassa Qatar Road</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kbr 11 : Qatif</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryd 01: Olaya, Sulimania &amp; Al Mursalat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryd 02: Batha and Murabba</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryd 03: Naseem and Nadeem Area</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryd 04: Badiya, Shifa and Swaidi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryd 05: Haraj Area</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryd 06: Rabwa and Malaz</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryd 07: Rawda Area</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryd 08: Al Diriaiha</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Area__c</fullName>
+        <externalId>false</externalId>
+        <label>Area</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AssistantName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssistantPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Birth_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Birth Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Birthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Department</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <picklist>
+            <controllingField>Division__c</controllingField>
+            <picklistValues>
+                <fullName>Visual Merchandising</fullName>
+                <default>false</default>
+                <controllingFieldValues>Marketing</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <controllingFieldValues>Management- Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <controllingFieldValues>Management- Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Logistic</fullName>
+                <default>false</default>
+                <controllingFieldValues>Management- Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Replenishment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Management- Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Analyst</fullName>
+                <default>false</default>
+                <controllingFieldValues>Management- Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Store</fullName>
+                <default>false</default>
+                <controllingFieldValues>Management- Support</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TV</fullName>
+                <default>false</default>
+                <controllingFieldValues>CAV</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HV</fullName>
+                <default>false</default>
+                <controllingFieldValues>CAV</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HiFi</fullName>
+                <default>false</default>
+                <controllingFieldValues>CAV</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PA</fullName>
+                <default>false</default>
+                <controllingFieldValues>CAV</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PIC</fullName>
+                <default>false</default>
+                <controllingFieldValues>CAV</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PVC</fullName>
+                <default>false</default>
+                <controllingFieldValues>CAV</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BNP</fullName>
+                <default>false</default>
+                <controllingFieldValues>CAV</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RME</fullName>
+                <default>false</default>
+                <controllingFieldValues>CAV</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ME</fullName>
+                <default>false</default>
+                <controllingFieldValues>CAV</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Handset</fullName>
+                <default>false</default>
+                <controllingFieldValues>Mobile</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accessories</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gaming</controllingFieldValues>
+                <controllingFieldValues>IT</controllingFieldValues>
+                <controllingFieldValues>Mobile</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gaming</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gaming</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Digital</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gaming</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Laptop</fullName>
+                <default>false</default>
+                <controllingFieldValues>IT</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tablet</fullName>
+                <default>false</default>
+                <controllingFieldValues>IT</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AC</fullName>
+                <default>false</default>
+                <controllingFieldValues>White Goods</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Washing Machine</fullName>
+                <default>false</default>
+                <controllingFieldValues>White Goods</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refrigerators</fullName>
+                <default>false</default>
+                <controllingFieldValues>White Goods</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cooking Range</fullName>
+                <default>false</default>
+                <controllingFieldValues>White Goods</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Small Appliance</fullName>
+                <default>false</default>
+                <controllingFieldValues>White Goods</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DivisionDepartment__c</fullName>
+        <externalId>false</externalId>
+        <label>Division / Department</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Marketing / Visual Merchandising</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Management-Support / Finance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Management-Support / Service</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Management-Support / Logistic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Management-Support / Replenishment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Management-Support / Data Analyst</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Management-Support / Store</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAV / TV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAV / HV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAV / HiFi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAV / PA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAV / PIC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAV / PVC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAV / BNP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAV / RME</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAV / ME</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mobile / Handset</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mobile / Accessories</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gaming / Hardware</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gaming / Software</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gaming / Accessoires</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gaming / Digital</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IT / Laptop</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IT / Tablet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IT / Accessories</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>White Goods / AC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>White Goods / Washing Machine</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>White Goods / Refrigerators</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>White Goods / Cooking Range</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>White Goods / Small Appliance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PSX</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HAP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BST</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Division__c</fullName>
+        <externalId>false</externalId>
+        <label>Division</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Management- Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gaming</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>White Goods</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PSX</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HAP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BST</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <inlineHelpText>Work Email</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>End_Working_day__c</fullName>
+        <externalId>false</externalId>
+        <label>End Working day</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Facebook__c</fullName>
+        <externalId>false</externalId>
+        <label>Facebook</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>GPS_Location__c</fullName>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>GPS Location</label>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HomePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Google AdWords</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Level</label>
+        <picklist>
+            <picklistValues>
+                <fullName>A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>LinkedIn__c</fullName>
+        <externalId>false</externalId>
+        <label>LinkedIn</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>MEC_ID__c</fullName>
+        <externalId>true</externalId>
+        <inlineHelpText>This field will be removed after importing the contacts, used to manage the import from excel</inlineHelpText>
+        <label>MEC ID</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>MEC_Person_Incharge2__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>As per the CRM import File</inlineHelpText>
+        <label>MEC Person Incharge 2</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MEC_Person_Incharge__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Owner.FirstName  &amp; &apos; &apos;  &amp;  Account.Owner.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Account Owner</inlineHelpText>
+        <label>MEC Person Incharge</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MailingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Mobile_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Mobile 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Mobile 3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>OtherAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Personal_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Personal Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Phone_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Phone_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone 3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Position__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Work Function (Position)</inlineHelpText>
+        <label>Position</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Products_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Products Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hi-Fi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PIC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PVC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BNP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RME</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SEC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MOB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PSX</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BENQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eloc</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Products_Sub_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Products Sub-Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hi-Fi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PIC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PVC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BNP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RME</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SEC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MOB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PSX</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BENQ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eloc</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RFPO_contact__c</fullName>
+        <externalId>false</externalId>
+        <label>RFPO contact</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SAP_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>SAP Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Category 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Category 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Category 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Category 4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Category 5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Category 6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Category 7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Org__c</fullName>
+        <externalId>false</externalId>
+        <globalPicklist>Sales_Org</globalPicklist>
+        <label>Sales Org</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Products_Category__c</fullName>
+        <description>Products Categories For Sales People</description>
+        <externalId>false</externalId>
+        <formula>IF(
+  ISPICKVAL(Sales_Category__c, &quot;Category 1&quot;), 
+IF(INCLUDES( Account.Category_1__c , &quot;TV&quot;), &quot;TV, &quot; , NULL) + 
+IF(INCLUDES( Account.Category_1__c , &quot;IT&quot;), &quot;IT, &quot; , NULL) + 
+IF(INCLUDES( Account.Category_1__c , &quot;HV&quot;), &quot;HV, &quot; , NULL)
+, 
+IF(
+  ISPICKVAL(Sales_Category__c, &quot;Category 2&quot;), 
+IF(INCLUDES( Account.Category_2__c , &quot;TV&quot;), &quot;TV, &quot; , NULL) + 
+IF(INCLUDES( Account.Category_2__c , &quot;IT&quot;), &quot;IT, &quot; , NULL) + 
+IF(INCLUDES( Account.Category_2__c , &quot;HV&quot;), &quot;HV, &quot; , NULL)
+, NULL)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Products Categories For Sales People</inlineHelpText>
+        <label>Sales Products Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Send_Anniversary_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is part of the Birthday Emailer AppExchange package.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this field if you wish to send an anniversary email to this contact, using the Anniversary Email email template.</inlineHelpText>
+        <label>Send Anniversary Email</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Birthday_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is related to the Birthday Emailer AppExchange package</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this field to enable an automated birthday email to be sent to this contact, using the &quot;Birthday Email&quot; email template.</inlineHelpText>
+        <label>Send Birthday Email</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Start_Ending_Working_Hours_Friday__c</fullName>
+        <externalId>false</externalId>
+        <label>Start/Ending Working Hours(Friday)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Ending_Working_Hours_Normal_days__c</fullName>
+        <externalId>false</externalId>
+        <label>Start/Ending Working Hours(Normal days)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Start_Working_day__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Working day</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Store_GPS_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Store GPS Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Area__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Area</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Twitter__c</fullName>
+        <externalId>false</externalId>
+        <label>Twitter</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Upload_Info__c</fullName>
+        <description>To identify the upload batch, this is internal and hidden info</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To identify upload batch, this is internal and hidden</inlineHelpText>
+        <label>Upload Info</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wedding_Anniversary_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Wedding Anniversary Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Work_Email_del__c</fullName>
+        <externalId>false</externalId>
+        <label>Work Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>Area_1__c</columns>
+        <columns>Area_2__c</columns>
+        <columns>Area_3__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>MyContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Contacts</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Contact</fullName>
+        <active>true</active>
+        <label>Contact</label>
+        <picklistValues>
+            <picklist>Area_1__c</picklist>
+            <values>
+                <fullName>City</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Province</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Area_2__c</picklist>
+            <values>
+                <fullName>Downtown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uptown</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Area_3__c</picklist>
+            <values>
+                <fullName>Jed 01 %3A %28All areas after Royal Terminal%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 02 %3A %28Al Mohamadiah%2C Al Nayem %26 Al Nahda%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 03 %3A %28Al Nozha%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 04 %3A %28Al Salama %2CAl Zahra %2C Al Shatie%2CAl Rawda %26 Al Khaledia%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 05 %3A %28Al Safa %2C Al Marwa%2C Al Bawadi %26 Al Faisaliah%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 06 %3A %28Al Rehab %2C Al Azizia %26 Mushrefa%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 07 %3A %28Al Hamra %2C Al Andalus %26 Al Rowais%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 08 %3A %28Al Naseem %2C Bani Malik%2C Al Wrood %26 Al Sharafia%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 09 %3A %28Eastern Bogdadiah%2C Al Kandara%2C Al Suhaifa %26 Al Amariah%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 10 %3A %28Al Balad %26 Western Bogdadia%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 11 %3A %28Al Sabeel %26 Al Hendawiah%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 12 %3A %28Al Sulimaniah %26 Al Fayha%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 13 %3A %28Al Jamea%2C Al Thagher%2C Bin Ladin %26 Al Wazeeria%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 14 %3A %28Al Nuzlah%2C Madaen Al Fahad%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 15 %3A %28Al Mahgar%2C Haraj %2C Al Senaya %26 Al Khomra%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 01 %3A Khobar Downtown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 02 %3A Khobar Uptown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 03 %3A Dammam Downtown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 04 %3A Dammam Khazan St%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 05 %3A Dammam Uptown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 06 %3A Jubail Downtown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 07 %3A Jubail Uptown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 08 %3A Hassa Downtown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 09 %3A Hassa Uptown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 10 %3A Hassa Qatar Road</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 11 %3A Qatif</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 01%3A Olaya%2C Sulimania %26 Al Mursalat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 02%3A Batha and Murabba</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 03%3A Naseem and Nadeem Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 04%3A Badiya%2C Shifa and Swaidi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 05%3A Haraj Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 06%3A Rabwa and Malaz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 07%3A Rawda Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 08%3A Al Diriaiha</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Department__c</picklist>
+            <values>
+                <fullName>AC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooking Range</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Analyst</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Handset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HiFi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laptop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PVC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigerators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replenishment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small Appliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tablet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visual Merchandising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Washing Machine</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>DivisionDepartment__c</picklist>
+            <values>
+                <fullName>BST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F BNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F HV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F HiFi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F PA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F PIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F PVC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F RME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming %2F Accessoires</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming %2F Digital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming %2F Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming %2F Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT %2F Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT %2F Laptop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT %2F Tablet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management-Support %2F Data Analyst</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management-Support %2F Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management-Support %2F Logistic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management-Support %2F Replenishment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management-Support %2F Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management-Support %2F Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing %2F Visual Merchandising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile %2F Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile %2F Handset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Goods %2F AC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Goods %2F Cooking Range</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Goods %2F Refrigerators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Goods %2F Small Appliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Goods %2F Washing Machine</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Division__c</picklist>
+            <values>
+                <fullName>BST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management- Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Goods</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google AdWords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level__c</picklist>
+            <values>
+                <fullName>A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Products_Category__c</picklist>
+            <values>
+                <fullName>BENQ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eloc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hi-Fi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MOB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PVC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WG</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Products_Sub_Category__c</picklist>
+            <values>
+                <fullName>BENQ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eloc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hi-Fi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MOB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PVC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WG</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RFPO_contact__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Category__c</picklist>
+            <values>
+                <fullName>Category 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Category 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Category 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Category 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Category 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Category 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Category 7</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Org</picklist>
+            <values>
+                <fullName>FDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>POS</fullName>
+        <active>true</active>
+        <description>Point Of Sales</description>
+        <label>POS</label>
+        <picklistValues>
+            <picklist>Area_1__c</picklist>
+            <values>
+                <fullName>City</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Province</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Area_2__c</picklist>
+            <values>
+                <fullName>Downtown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uptown</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Area_3__c</picklist>
+            <values>
+                <fullName>Jed 01 %3A %28All areas after Royal Terminal%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 02 %3A %28Al Mohamadiah%2C Al Nayem %26 Al Nahda%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 03 %3A %28Al Nozha%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 04 %3A %28Al Salama %2CAl Zahra %2C Al Shatie%2CAl Rawda %26 Al Khaledia%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 05 %3A %28Al Safa %2C Al Marwa%2C Al Bawadi %26 Al Faisaliah%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 06 %3A %28Al Rehab %2C Al Azizia %26 Mushrefa%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 07 %3A %28Al Hamra %2C Al Andalus %26 Al Rowais%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 08 %3A %28Al Naseem %2C Bani Malik%2C Al Wrood %26 Al Sharafia%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 09 %3A %28Eastern Bogdadiah%2C Al Kandara%2C Al Suhaifa %26 Al Amariah%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 10 %3A %28Al Balad %26 Western Bogdadia%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 11 %3A %28Al Sabeel %26 Al Hendawiah%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 12 %3A %28Al Sulimaniah %26 Al Fayha%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 13 %3A %28Al Jamea%2C Al Thagher%2C Bin Ladin %26 Al Wazeeria%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 14 %3A %28Al Nuzlah%2C Madaen Al Fahad%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jed 15 %3A %28Al Mahgar%2C Haraj %2C Al Senaya %26 Al Khomra%29%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 01 %3A Khobar Downtown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 02 %3A Khobar Uptown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 03 %3A Dammam Downtown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 04 %3A Dammam Khazan St%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 05 %3A Dammam Uptown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 06 %3A Jubail Downtown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 07 %3A Jubail Uptown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 08 %3A Hassa Downtown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 09 %3A Hassa Uptown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 10 %3A Hassa Qatar Road</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kbr 11 %3A Qatif</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 01%3A Olaya%2C Sulimania %26 Al Mursalat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 02%3A Batha and Murabba</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 03%3A Naseem and Nadeem Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 04%3A Badiya%2C Shifa and Swaidi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 05%3A Haraj Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 06%3A Rabwa and Malaz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 07%3A Rawda Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryd 08%3A Al Diriaiha</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Department__c</picklist>
+            <values>
+                <fullName>AC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooking Range</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Analyst</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Handset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HiFi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laptop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logistic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PVC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigerators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replenishment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small Appliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tablet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visual Merchandising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Washing Machine</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>DivisionDepartment__c</picklist>
+            <values>
+                <fullName>BST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F BNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F HV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F HiFi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F PA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F PIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F PVC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F RME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV %2F TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming %2F Accessoires</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming %2F Digital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming %2F Hardware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming %2F Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT %2F Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT %2F Laptop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT %2F Tablet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management-Support %2F Data Analyst</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management-Support %2F Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management-Support %2F Logistic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management-Support %2F Replenishment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management-Support %2F Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management-Support %2F Store</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing %2F Visual Merchandising</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile %2F Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile %2F Handset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Goods %2F AC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Goods %2F Cooking Range</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Goods %2F Refrigerators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Goods %2F Small Appliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Goods %2F Washing Machine</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Division__c</picklist>
+            <values>
+                <fullName>BST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HAP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management- Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Goods</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google AdWords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level__c</picklist>
+            <values>
+                <fullName>A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Products_Category__c</picklist>
+            <values>
+                <fullName>BENQ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eloc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hi-Fi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MOB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PVC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WG</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Products_Sub_Category__c</picklist>
+            <values>
+                <fullName>BENQ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BNP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eloc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hi-Fi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MOB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PVC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WG</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RFPO_contact__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Category__c</picklist>
+            <values>
+                <fullName>Category 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Category 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Category 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Category 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Category 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Category 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Category 7</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Org</picklist>
+            <values>
+                <fullName>FDC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MEC</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupFilterFields>FULL_NAME</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>APXTConga4__Conga_Composer_OAuth</fullName>
+        <availability>online</availability>
+        <description>*** DO NOT USE THIS BUTTON ON A PAGE LAYOUT *** 
+
+OAuth buttons require additional setup. Please see the Composer Installation Guide for more details.
+
+COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. Then add optional parameters to finely tune the button&apos;s behavior. See the Composer Configuration Guide for details.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>660</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Conga Composer (OAuth)</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/APXTConga4__Conga_Composer
+?id={!Contact.Id}</url>
+        <width>900</width>
+    </webLinks>
+    <webLinks>
+        <fullName>APXTConga4__Conga_Mail_Merge</fullName>
+        <availability>online</availability>
+        <description>*** DO NOT USE THIS BUTTON ON A PAGE LAYOUT *** 
+
+COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. Then add optional parameters to finely tune the button&apos;s behavior. See the Conga Configuration Guide for details.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>660</height>
+        <isResizable>false</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Conga Composer</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_290}
+&amp;id={!Contact.Id}</url>
+        <width>900</width>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
+    </webLinks>
+</CustomObject>

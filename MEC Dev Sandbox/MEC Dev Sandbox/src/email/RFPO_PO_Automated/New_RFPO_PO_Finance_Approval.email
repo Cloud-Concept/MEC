@@ -1,0 +1,6 @@
+Dear Finance Team
+
+Please check and act immeditly for the attached Request for sales order release details in this link: {!Opportunity.Link}
+
+Best regards
+{!Opportunity.OwnerFullName}

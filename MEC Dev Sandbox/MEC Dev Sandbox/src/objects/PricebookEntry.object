@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOverrides>
+        <actionName>AddPricebookEntryOnPricebook</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddPricebookEntryOnProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddStandardPrice</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Classification_Level__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(P__c = &apos;Mobile&apos;, 
+IF(U__c &lt; 599 ,&apos;D&apos;, 
+IF(U__c &lt; 1000,&apos;C&apos;, 
+IF(U__c &lt; 1500,&apos;B&apos;, 
+IF(U__c &gt; 1500,&apos;A&apos;,&apos;&apos;)))) 
+,IF(P__c =&apos;TV&apos;, 
+IF(U__c &lt; 1500 ,&apos;D&apos;, 
+IF(U__c &lt; 5000,&apos;C&apos;, 
+IF(U__c &lt; 10000,&apos;B&apos;, 
+IF(U__c &gt; 10000,&apos;A&apos;,&apos;&apos;)))) 
+,IF(P__c =&apos;HV&apos;, 
+IF(U__c &lt; 500 ,&apos;D&apos;, 
+IF(U__c &lt; 700,&apos;C&apos;, 
+IF(U__c &lt; 1000,&apos;B&apos;, 
+IF(U__c &gt; 1000,&apos;A&apos;,&apos;&apos;)))) 
+,IF(P__c =&apos;HIFI&apos; || P__c =&apos;AC&apos;, 
+IF(U__c &lt; 1000 ,&apos;D&apos;, 
+IF(U__c &lt; 2000,&apos;C&apos;, 
+IF(U__c &lt; 3000,&apos;B&apos;, 
+IF(U__c &gt; 3000,&apos;A&apos;,&apos;&apos;)))) 
+,IF(P__c=&apos;ME&apos; || P__c=&apos;CH&apos;|| P__c=&apos;BenQ&apos; || P__c=&apos;RME&apos;, 
+IF(U__c&lt;500 ,&apos;D&apos;, 
+IF(U__c&lt;700,&apos;C&apos;, 
+IF(U__c&lt;1000,&apos;B&apos;, 
+IF(U__c&gt;1000,&apos;A&apos;,&apos;&apos;)))) 
+,IF(P__c=&apos;PSX&apos;, 
+IF(U__c&lt;1000 ,&apos;D&apos;, 
+IF(U__c&lt;1500,&apos;C&apos;, 
+IF(U__c&lt;2500,&apos;B&apos;, 
+IF(U__c&gt;2500,&apos;A&apos;,&apos;&apos;)))) 
+,IF(P__c=&apos;Lenovo&apos;,
+IF(U__c&lt;1000 ,&apos;D&apos;, 
+IF(U__c&lt;1500,&apos;C&apos;, 
+IF(U__c&lt;2500,&apos;B&apos;, 
+IF(U__c&gt;2500,&apos;A&apos;,&apos;&apos;)))) 
+,IF(P__c=&apos;PIC&apos; || P__c=&apos;PVC&apos; || P__c=&apos;Elux&apos;, 
+IF(U__c&lt;1000 ,&apos;D&apos;, 
+IF(U__c&lt;2000,&apos;C&apos;, 
+IF(U__c&lt;4000,&apos;B&apos;, 
+IF(U__c&gt;4000,&apos;A&apos;,&apos;&apos;))))
+,
+IF(P__c=&apos;BNP&apos;, 
+IF(U__c&lt;1000 ,&apos;D&apos;, 
+IF(U__c&lt;1500,&apos;C&apos;, 
+IF(U__c&lt;1999,&apos;B&apos;, 
+IF(U__c&gt;1999,&apos;A&apos;,&apos;&apos;))))
+,
+IF(P__c=&apos;PA&apos;, 
+IF(U__c&lt;2000 ,&apos;D&apos;, 
+IF(U__c&lt;700,&apos;C&apos;, 
+IF(U__c&lt;1500,&apos;B&apos;, 
+IF(U__c&gt;1500,&apos;A&apos;,&apos;&apos;))))
+,&apos;&apos;
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+)</formula>
+        <inlineHelpText>Show Classification Level of following Product Category
+Mobile
+TV
+HV
+HIFI
+PIC
+PVC
+PA
+RME
+BNP</inlineHelpText>
+        <label>Classification Level</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+    </fields>
+    <fields>
+        <fullName>P__c</fullName>
+        <description>This field copy value from Product Category and will be used to calculate Classification level</description>
+        <externalId>false</externalId>
+        <formula>Product_Category__c</formula>
+        <label>P</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Product_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Category</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StandardPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>U__c</fullName>
+        <description>This field copy value from UnitPrice and will be used to calculate Classification level</description>
+        <externalId>false</externalId>
+        <formula>UnitPrice</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>U</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>UseStandardPrice</fullName>
+    </fields>
+    <searchLayouts>
+        <searchResultsAdditionalFields>PRODUCT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT.DEFAULT_PRICE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.DESCRIPTION</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields xsi:nil="true"/>
+        <searchResultsAdditionalFields xsi:nil="true"/>
+        <searchResultsAdditionalFields xsi:nil="true"/>
+        <searchResultsAdditionalFields>Product_Category__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields xsi:nil="true"/>
+    </searchLayouts>
+</CustomObject>

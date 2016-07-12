@@ -1,0 +1,96 @@
+<apex:page standardController="Opportunity" extensions="AddProductController" sidebar="false" action="{!getSearchCriteria}">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:outputPanel id="SearchBlock">
+                <apex:pageBlockSection title="Search Criteria">
+                    <apex:outputField value="{!Opportunity.AccountId}" rendered="false" />
+                    <apex:outputField value="{!Opportunity.Contact__c}" rendered="false" />
+                    <apex:outputField value="{!Opportunity.RecordType}" rendered="false" />
+                    <apex:outputField label="Account" value="{!RelatedAccount.name}"/>
+                    <br/>
+                    <apex:outputField label="Contact" value="{!RelatedContact.name}"/>
+                    <br/>
+                    <apex:outputField label="Store" value="{!Store.name}" id="StoreName"/>
+                    <br/>
+                    
+                    <apex:pageBlockTable value="{!SearchCriteria}" var="srch" rendered="{!IF(SearchCriteria.size >0, True,False)}">
+                        <apex:column headerValue="Select"> <apex:inputCheckbox value="{!srch.isSelected}">
+                            <!-- <apex:actionSupport event="onchange" action="{!SetSearchDisabled}" rerender="SearchBlock"/> -->
+                            </apex:inputCheckbox> 
+                        </apex:column>
+                        <apex:column headerValue="Product Category"> <apex:outputText value="{!srch.Category}"/></apex:column>
+                        <apex:column headerValue="Classification Level"> <apex:outputText value="{!srch.Classification}"/> </apex:column>        
+                    </apex:pageBlockTable>
+                    <br/>
+                    <apex:outputPanel >      
+                        <apex:commandButton action="{!doSearch}" value="Search" rendered="{!IF(SearchCriteria.size >0, True,False)}" />
+                    </apex:outputPanel>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            
+        </apex:pageBlock>
+        
+        
+        <!--Search Results -->
+        <apex:pageBlock >
+            <apex:outputPanel id="SearchResultBlock">
+                <apex:pageBlockSection title="Search Results" rendered="{!IF(SearchResult.size >0, True,False)}" >
+                    <!--<apex:outputPanel > -->
+                    <apex:pageBlockTable value="{!SearchResult}" var="Result">
+                        <apex:column headerValue="Select"> 
+                            <apex:inputCheckbox value="{!Result.isSelected}">
+                                <apex:actionSupport event="onchange" action="{!SetAddDisabled}" rerender="SearchResultBlock"/>
+                            </apex:inputCheckbox> 
+                        </apex:column>
+                        
+                        <apex:column headerValue="Store Name"> <apex:outputField value="{!Result.Acc.Name}"/> </apex:column>
+                        <apex:column headerValue="Item Number"> <apex:outputField value="{!Result.Prod.name}"/> </apex:column>
+                        <apex:column headerValue="Item Model"> <apex:outputField value="{!Result.Prod.Manufacturing_Type__c}"/> </apex:column>
+                        <apex:column headerValue="Product Category"> <apex:outputField value="{!Result.Prod.Merchandise_Category__c}"/> </apex:column>
+                        <apex:column headerValue="Sub Category"> <apex:outputField value="{!Result.Prod.Product_Hierarchy2__r.Category__c}"/> </apex:column>
+                        <apex:column headerValue="Item Status"> <apex:outputField value="{!Result.Prod.Item_Status_Description__c}"/> </apex:column>   
+                        <apex:column headerValue="Class"> <apex:outputField value="{!Result.PBE.Classification_Level__c}"/> </apex:column>   
+                        <apex:column headerValue="List Price"> <apex:outputField value="{!Result.PBE.UnitPrice}"/> </apex:column>
+                        <!--<apex:column headerValue="Latest Stock & Sales Date"> <apex:outputField value="{!Result.Prod.Latest_Stock__c}"/> </apex:column>   -->
+                        <apex:column headerValue="SF Rec RFPO Qty" rendered="{!IF(Opportunity.RecordType.DeveloperName == 'RFPO' ,True,False)}"> <apex:outputField value="{!Result.opLineItem.Recommended_RFPO__c}" /> </apex:column>   
+                        <apex:column headerValue="RFPO Qty" rendered="{!IF(Opportunity.RecordType.DeveloperName == 'RFPO' ,True,False)}"> <apex:inputField style="width:50px" value="{!Result.opLineItem.RFPO_Qty__c}"/> </apex:column>   
+                        <apex:column headerValue="RFPO Qty" rendered="{!IF(Opportunity.RecordType.DeveloperName == 'PO' ,True,False)}"> <apex:outputText value="{!Result.opLineItem.RFPO_Qty__c}"/> </apex:column>   
+                        <apex:column headerValue="PO Qty" rendered="{!IF(Opportunity.RecordType.DeveloperName == 'PO' ,True,False)}"> <apex:inputField value="{!Result.opLineItem.PO_Qty__c}"/> </apex:column>   
+                        <apex:column headerValue="Stock Qty MEC"> <apex:outputField value="{!Result.Stock.Val_in_Trans_Tfr__c}"/> </apex:column>   
+                        <apex:column headerValue="Store Stock Qty"> <apex:outputField value="{!Result.sellOut.Stock_on_Hand__c}"/> </apex:column>
+                        <apex:column headerValue="Sell Out"> <apex:outputField value="{!Result.sellOut.Weighted_Sell_Out__c}"/> </apex:column>   
+                        <apex:column headerValue="Remarks"> <apex:inputField value="{!Result.opLineItem.Remarks__c}" /></apex:column>      
+                        
+                    </apex:pageBlockTable>
+                    <br/>
+                    <!-- pagination start-->
+                    <br/>
+                    <apex:outputPanel > 
+                        <apex:commandButton action="{!Beginning}" title="First" value="<<" disabled="{!DisablePrevious}"/>
+                        <apex:commandButton action="{!Previous}" title="Previous" value="<" disabled="{!DisablePrevious}"/>        
+                        <apex:commandButton action="{!Next}" title="Next" value=">" disabled="{!DisableNext}"/>
+                        <apex:commandButton action="{!End}" title="Last" value=">>" disabled="{!DisableNext}"/>        
+                    </apex:outputPanel>
+                    <!-- pagination end-->
+                    
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            <apex:outputPanel id="NxtPrevbuttonS" rendered="{!IF(AccountList.size > 1, True,False)}">
+                <apex:commandButton value="Previous Store" action="{!getPrevAccount}" disabled="{!PrevDisabled}" reRender="SearchResultBlock, SearchBlock, NxtPrevbuttonS" />
+                <!-- <apex:outputPanel  rendered="{!IF(SearchResult.size >=0, True,False)}"> -->
+                <apex:commandButton value="Next Store" action="{!getNextAccount}" disabled="{!NextDisabled}" reRender="SearchBlock, SearchResultBlock, NxtPrevbuttonS" />
+                
+            </apex:outputPanel>
+            
+            <apex:pageBlockButtons id="saveButton">
+                <apex:commandButton value="Save" action="{!AddOppLineItems}" oncomplete="alert('Products are added successfully!');" reRender="SearchResultBlock" />
+                <apex:commandButton value="Save and Return" action="{!AddOppLineItemsReturn}" reRender="SearchResultBlock" >
+                    <apex:param assignTo="{!returnToOpp}" value="{!trueBool}"/>
+                </apex:commandButton>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+        
+    </apex:form>
+    
+</apex:page>

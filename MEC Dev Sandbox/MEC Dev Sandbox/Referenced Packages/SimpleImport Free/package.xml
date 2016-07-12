@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SimpleImport Free</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <description>SimpleImport allows both administrators &amp; non-administrator users to quickly and easily import XLS, XLSX, CSV and ODS files into Salesforce.  SimpleImport has several limitations not present in SimpleImport Premium – see the AppExchange for more info.</description>
+    <namespacePrefix>pw_sifree</namespacePrefix>
+    <types>
+        <members>LicenseChecker</members>
+        <members>TestLicenseChecker</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>ProvenWorks_SimpleImport_Free</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>SimpleImportSettings__c.RecordsPerBatch__c</members>
+        <members>SimpleImportSettings__c.ServiceVersion__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>SimpleImportSettings__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>SimpleImport</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>SimpleImport</members>
+        <members>SimpleImport/SimpleImportLogo.png</members>
+        <name>Document</name>
+    </types>
+    <version>35.0</version>
+</Package>

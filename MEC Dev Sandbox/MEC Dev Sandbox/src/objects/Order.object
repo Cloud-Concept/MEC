@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Activate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Approve</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Deactivate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewReduction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ReduceOrder</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AccountNumber</fullName>
+    </fields>
+    <fields>
+        <fullName>Account_Credit_Limit__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Credit_Limit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Credit Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Account_Credit_Note__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Credit_Note__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Account Credit Note</inlineHelpText>
+        <label>Account Credit Note</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Account_Over_Due__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Over_Due__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Over Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ActivatedById</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ActivatedDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Approval_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Approved</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Available_Stock__c</fullName>
+        <externalId>false</externalId>
+        <label>Available Stock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BillToContactId</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Booking_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking No</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompanyAuthorizedById</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CompanyAuthorizedDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ContractEndDate</fullName>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContractName</fullName>
+    </fields>
+    <fields>
+        <fullName>Credit_Limit_Status_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+ISPICKVAL( Over_Credit_Limit_Approval_Status__c  , &quot;Approved&quot;), 
+&quot;Credit Over Limit Approved&quot;, 
+IF ( 
+ Over_Credit_Limit_Percentage__c  &gt;0 
+,&quot;Warning&quot;, 
+&quot;OK&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Credit Limit Status Text - to be hidden - This will populate the visual indicator</inlineHelpText>
+        <label>Credit Limit Status Text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credit_Limit_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+( Credit_Limit_Status_Text__c  = &quot;Credit Over Limit Approved&quot;), 
+IMAGE(&quot;https://c.cs87.visual.force.com/resource/1466451643000/CreditOverLimitApproved &quot;, &quot;Credit Over Limit Approved&quot;), 
+IF ( 
+( Credit_Limit_Status_Text__c = &quot;Warning&quot;) 
+, IMAGE(&quot;https://c.cs87.visual.force.com/resource/1466171510000/Warning&quot;, &quot;Warning&quot;), 
+IMAGE(&quot;https://c.cs87.visual.force.com/resource/1466171457000/OK&quot;, &quot;Green&quot;) 
+) 
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Credit Limit Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CustomerAuthorizedById</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CustomerAuthorizedDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>EffectiveDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Front_Margin__c</fullName>
+        <externalId>false</externalId>
+        <label>Front Margin %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsReductionOrder</fullName>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OrderReferenceNumber</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Order_Delivery_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Delivery Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>OriginalOrderId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Over_Credit_Limit_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+(Account_Credit_Limit__c +  Account_Credit_Note__c - (Account_Over_Due__c + Total_Price__c ))&lt;0, 
+(Account_Credit_Limit__c +  Account_Credit_Note__c - (Account_Over_Due__c + Total_Price__c ))*(-1), 
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>If negative, shows (Over Due + SO Amount) - (Account Credit Limit + Account Credit Note), Otherwise shows 0</inlineHelpText>
+        <label>Over Credit Limit Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Over_Credit_Limit_Approval_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Over Credit Limit Approval Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Over_Credit_Limit_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+ Account_Credit_Limit__c &gt;0, 
+ Over_Credit_Limit_Amount__c  /  Account_Credit_Limit__c , 
+1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Over Credit Limit Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PO_Qty__c</fullName>
+        <externalId>false</externalId>
+        <label>PO Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PO_Validity__c</fullName>
+        <externalId>false</externalId>
+        <label>PO Validity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PoDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PoNumber</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Qty_fulfilled__c</fullName>
+        <externalId>false</externalId>
+        <label>Qty fulfilled</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QuoteId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Quote__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Quote</label>
+        <referenceTo>Quote</referenceTo>
+        <relationshipLabel>Orders</relationshipLabel>
+        <relationshipName>Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RFP_Qty__c</fullName>
+        <externalId>false</externalId>
+        <label>RFP Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason_for_OverCredit_Limit_Remarks__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Reason for over credit Limit request if needed</inlineHelpText>
+        <label>Reason for OverCredit Limit / Remarks</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Rejection_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Rejection Reason</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Overdue Payments</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Credit limit Exceeded</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Credit status is blocked</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SAP_Order_Number__c</fullName>
+        <externalId>true</externalId>
+        <label>SAP Order Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sell_In_Qty__c</fullName>
+        <externalId>false</externalId>
+        <label>Sell In Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sell_Out_Qty__c</fullName>
+        <externalId>false</externalId>
+        <label>Sell Out Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShipToContactId</fullName>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Stock_in_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock in Channel</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Temporary_Approval_For_OverCredit_Limit__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if you with you request for a Temporary Approval For Credit Limit?</inlineHelpText>
+        <label>Temporary Approval For OverCredit Limit?</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TotalAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>Total_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Order</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Unbooked_Qty__c</fullName>
+        <externalId>false</externalId>
+        <label>Unbooked Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllActivatedOrders</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ORDERS.STATUS_CODE</field>
+            <operation>equals</operation>
+            <value>A</value>
+        </filters>
+        <label>All Activated Orders</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Sales_Orders</fullName>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>ORDERS.TOTAL_AMOUNT</columns>
+        <columns>ORDERS.EFFECTIVE_DATE</columns>
+        <columns>ORDERS.STATUS</columns>
+        <columns>CONTRACT.CONTRACT_NUMBER</columns>
+        <columns>ORIGINAL_ORDER.ORDER_NUMBER</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>QUOTE.NAME</columns>
+        <columns>ORDERS.TYPE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Sales Orders</label>
+    </listViews>
+    <listViews>
+        <fullName>Blocked_Sales_Order</fullName>
+        <columns>ORDERS.ORDER_NUMBER</columns>
+        <columns>SALES.ACCOUNT.NAME</columns>
+        <columns>ORDERS.TOTAL_AMOUNT</columns>
+        <columns>ORDERS.EFFECTIVE_DATE</columns>
+        <columns>ORDERS.STATUS</columns>
+        <columns>CONTRACT.CONTRACT_NUMBER</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ORDERS.STATUS</field>
+            <operation>equals</operation>
+            <value>Blocked</value>
+        </filters>
+        <label>Blocked Sales Order</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ORDERS.ORDER_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SALES.ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ORDERS.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ORDERS.TOTAL_AMOUNT</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ORDERS.ORDER_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTRACT.OWNERALIAS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ORDERS.ORDER_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTRACT.OWNERALIAS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ORDERS.ORDER_NUMBER</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>SO01_Over_Credit_Limit_Reason</fullName>
+        <active>true</active>
+        <description>Enter a reason for over limit if temporary approval is needed</description>
+        <errorConditionFormula>Temporary_Approval_For_OverCredit_Limit__c  == True 
+&amp;&amp; 
+ISBLANK(  Reason_for_OverCredit_Limit_Remarks__c  )</errorConditionFormula>
+        <errorMessage>Please enter a reason or the Over Limit request then submit for approval. 
+Error: SO01</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SO02_Temporary_Approval_For_Credit_Limit</fullName>
+        <active>true</active>
+        <description>Temporary Approval For Over Credit Limit cannot be unchecked if Over Limit Approval Status is Approved or Rejected already</description>
+        <errorConditionFormula>PRIORVALUE(  Temporary_Approval_For_OverCredit_Limit__c  )= TRUE 
+&amp;&amp; 
+Temporary_Approval_For_OverCredit_Limit__c= False 
+&amp;&amp; 
+!ISPICKVAL(  Over_Credit_Limit_Approval_Status__c  , &quot;Pending&quot;)</errorConditionFormula>
+        <errorDisplayField>Temporary_Approval_For_OverCredit_Limit__c</errorDisplayField>
+        <errorMessage>You are not allowed to unchecked the &quot;Temporary Approval For Credit Limit &quot; field once Approval or Rejection is provided 
+Error: SO02</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Send_an_Email</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Send an Email</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>alert(&apos;Test Button&apos;)</url>
+    </webLinks>
+</CustomObject>

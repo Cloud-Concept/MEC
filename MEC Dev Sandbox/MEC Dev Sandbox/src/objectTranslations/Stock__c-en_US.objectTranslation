@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Stock</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Stocks</value>
+    </caseValues>
+    <fields>
+        <label><!-- Article --></label>
+        <name>Article__c</name>
+        <relationshipLabel><!-- Stocks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Descr. of Storage Loc. --></label>
+        <name>Descr_of_Storage_Loc__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Key (Formula) --></label>
+        <name>External_Key_Formula__c</name>
+    </fields>
+    <fields>
+        <help><!-- Article&quot;-&quot;Sotrage Location&quot;-&quot;Warehouse --></help>
+        <label><!-- External Key --></label>
+        <name>External_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reserved --></label>
+        <name>Reserved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse --></label>
+        <name>Site__c</name>
+        <relationshipLabel><!-- Stocks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sotrage Location --></label>
+        <name>Sotrage_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Stock --></label>
+        <name>Special_Stock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Stock number --></label>
+        <name>Special_Stock_number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transit and Transfer --></label>
+        <name>Transit_and_Transfer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unrestricted --></label>
+        <name>Unrestricted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Val. in Trans./Tfr --></label>
+        <name>Val_in_Trans_Tfr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value restricted --></label>
+        <name>Value_restricted__c</name>
+    </fields>
+    <layouts>
+        <layout>Stock Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

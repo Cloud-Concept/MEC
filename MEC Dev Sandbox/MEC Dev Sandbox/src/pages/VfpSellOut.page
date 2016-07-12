@@ -1,0 +1,33 @@
+<apex:page standardController="Account" extensions="AddSellOut" sidebar="false" action="{!getSearchCriteria}">
+    <apex:form >
+        <!--Search Criteria -->
+        <apex:pageBlock >
+            <apex:outputPanel id="SearchBlock">
+                <apex:pageBlockSection title="Search Criteria" rendered="{!IF(SearchCriteria.size >0, True,False)}">
+                    
+                    <apex:outputField label="Account" value="{!RelatedAccount.name}"/>
+                    <br/>
+                                       
+                    <apex:pageBlockTable value="{!SearchCriteria}" var="srch">
+                        <apex:column headerValue="Select"> <apex:inputCheckbox value="{!srch.isSelected}">
+                            <!-- <apex:actionSupport event="onchange" action="{!SetSearchDisabled}" rerender="SearchBlock"/> -->
+                            </apex:inputCheckbox> 
+                        </apex:column>
+                        <apex:column headerValue="Product Category"> <apex:outputText value="{!srch.Category}"/></apex:column>
+                        <apex:column headerValue="Classification Level"> <apex:outputText value="{!srch.Classification}"/> </apex:column>        
+                    </apex:pageBlockTable>
+                    <br/>
+                    <apex:outputPanel >      
+                        <apex:commandButton action="{!doSearch}" value="Search" rendered="{!IF(SearchCriteria.size >0, True,False)}" />
+                    </apex:outputPanel>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            
+        </apex:pageBlock>
+        
+        
+           
+        
+    </apex:form>
+    
+</apex:page>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RFPO/PO Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RFPO/PO Line Items</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Sell in Price</value>
+        </caseValues>
+        <name>sales_price_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Conga Item Model --></label>
+        <name>Conga_Item_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conga_Item_Status --></label>
+        <name>Conga_Item_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conga Product Category --></label>
+        <name>Conga_Product_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conga Product sub Category --></label>
+        <name>Conga_Product_sub_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Front Margin Category --></label>
+        <name>Front_Margin_Category__c</name>
+        <picklistValues>
+            <masterLabel>BENQ</masterLabel>
+            <translation><!-- BENQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BNP</masterLabel>
+            <translation><!-- BNP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH</masterLabel>
+            <translation><!-- CH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eloc</masterLabel>
+            <translation><!-- Eloc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HV</masterLabel>
+            <translation><!-- HV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hi-Fi</masterLabel>
+            <translation><!-- Hi-Fi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOB</masterLabel>
+            <translation><!-- MOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIC</masterLabel>
+            <translation><!-- PIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSX</masterLabel>
+            <translation><!-- PSX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PVC</masterLabel>
+            <translation><!-- PVC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RME</masterLabel>
+            <translation><!-- RME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEC</masterLabel>
+            <translation><!-- SEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV</masterLabel>
+            <translation><!-- TV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WG</masterLabel>
+            <translation><!-- WG --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store --></label>
+        <name>Outlet__c</name>
+        <relationshipLabel><!-- Opportunity Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PO Qty --></label>
+        <name>PO_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Id --></label>
+        <name>Product_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Mapping code --></label>
+        <name>Product_Mapping_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFPO Qty --></label>
+        <name>RFPO_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommended RFPO --></label>
+        <name>Recommended_RFPO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remarks --></label>
+        <name>Remarks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Order --></label>
+        <name>Sales_Order__c</name>
+        <relationshipLabel><!-- Opportunity Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Store Stock on Hand --></label>
+        <name>Sell_Out_Stock_on_Hand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weighted Sell Out --></label>
+        <name>Weighted_Sell_Out__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- Add_Product --></label>
+        <name>Add_Product</name>
+    </webLinks>
+</CustomObjectTranslation>

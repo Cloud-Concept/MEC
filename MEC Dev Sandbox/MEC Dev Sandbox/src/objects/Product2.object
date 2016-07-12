@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Add</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Article__c</fullName>
+        <externalId>true</externalId>
+        <label>Article</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Available_Stock__c</fullName>
+        <externalId>false</externalId>
+        <label>Available On Hand Stock</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Base_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Base Unit</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Category Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Products1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Division__c</fullName>
+        <externalId>false</externalId>
+        <label>Division</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Family</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Gross_Weight__c</fullName>
+        <externalId>false</externalId>
+        <label>Gross Weight</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Item_Status_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( TEXT(Item_Status__c) = &apos;A&apos;,&apos;Active&apos;,
+IF(TEXT(Item_Status__c) = &apos;C&apos;,&apos;End Of Life&apos;,
+IF(TEXT(Item_Status__c) = &apos;B&apos;,&apos;Non Active&apos;,&apos;&apos;
+)
+)
+)</formula>
+        <label>Item Status Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Item Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Latest_Stock__c</fullName>
+        <externalId>false</externalId>
+        <label>Latest Stock</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Length__c</fullName>
+        <externalId>false</externalId>
+        <label>Length</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Manufacturing_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Manufacturing Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Merchandise_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Merchandise Category</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Net_Weight__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Weight</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Product_Category__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MDA&apos;,&apos;Mobile&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MCA&apos;,&apos;TV&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MCB&apos;,&apos;HV&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MCC&apos;,&apos;HIFI&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MCD&apos;,&apos;PIC&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MCE&apos;,&apos;PVC&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MAC&apos;,&apos;Ace IT&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MCF&apos;,&apos;PA&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MAD&apos;,&apos;Ace P&amp;S&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MAE&apos;,&apos;Ace Tab&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MAG&apos;,&apos;AceGaming&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MAT&apos;,&apos;Ace Mobile&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MCG&apos;,&apos;ME&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MCH&apos;,&apos;BNP&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MIA&apos;,&apos;IT&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MRT&apos;,&apos;Mobile&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MSM&apos;,&apos;Sony Mobiles&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MSS&apos;,&apos;SONY&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MRI&apos;,&apos;Camera&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MRG&apos;,&apos;Gaming&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MRL&apos;,&apos;AV&apos;, 
+IF( MID( Product_Hierarchy__c , 1, 3) =&apos;MRP&apos;,&apos;Portable Media&apos;, 
+&apos;Others&apos; 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Detail__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product_Hierarchy2__r.Description__c</formula>
+        <label>Product Detail</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Hierarchy2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Merchandise Hierarchy</label>
+        <referenceTo>Product_Hierarchy__c</referenceTo>
+        <relationshipLabel>Products</relationshipLabel>
+        <relationshipName>Products1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Hierarchy__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Hierarchy</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Website__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Website</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Org__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Org</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sell_In_Qty__c</fullName>
+        <externalId>false</externalId>
+        <label>Sell In Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sell_Out_Qty__c</fullName>
+        <externalId>false</externalId>
+        <label>Sell Out Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stock_in_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Stock in Channel</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trans_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Trans Group</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unit_of_Dimension__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit of Dimension</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Weighted_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Weighted Unit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Width__c</fullName>
+        <externalId>false</externalId>
+        <label>Width</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Youtube_demo_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>Youtube demo Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <listViews>
+        <fullName>AllProducts</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>Merchandise_Category__c</columns>
+        <columns>Product_Category__c</columns>
+        <columns>Product_Detail__c</columns>
+        <columns>Product_Hierarchy__c</columns>
+        <columns>Item_Status_Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Products</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.DESCRIPTION</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Merchandise_Category__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Hierarchy2__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Hierarchy__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Item_Status_Description__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Category__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Sell_In_Qty__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Sell_Out_Qty__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.FAMILY</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.DESCRIPTION</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Merchandise_Category__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Hierarchy2__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Hierarchy__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Detail__c</searchResultsAdditionalFields>
+    </searchLayouts>
+</CustomObject>

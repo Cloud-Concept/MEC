@@ -1,0 +1,12 @@
+Dear {!User.FirstName}
+
+You are kindly requested check and approval the below PO:
+
+Account Name: {!Opportunity.Account} 
+Opportunity Name: {!Opportunity.Name} 
+Close Date: {!Opportunity.CloseDate} 
+Stage: {!Opportunity.StageName} 
+Details: {!Opportunity.Link} 
+
+Best regards
+{!Opportunity.OwnerFullName}
